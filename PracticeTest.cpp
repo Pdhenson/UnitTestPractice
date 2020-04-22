@@ -85,7 +85,7 @@ TEST(PracticeTest, is_sorted)
 {
     Practice obj;
     int num = {1, 4 , 0};
-    obj.sortDescending(num1,num2,num3);
+    obj.sortDescending(num[0],num[1],num[2]);
 
     ASSERT_GE(num[0], num[1]);
     ASSERT_GE(num[1], num[2]);
