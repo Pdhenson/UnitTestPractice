@@ -84,7 +84,7 @@ TEST(PracticeTest, is_not_palindrome_with_space)
 TEST(PracticeTest, sorted)
 {
     Practice obj;
-    int num[3] = {1, 4 , 0};
+    int num[3] = {5, 3 , 1};
     obj.sortDescending(num[0],num[1],num[2]);
 
     ASSERT_GE(num[0], num[1]);
