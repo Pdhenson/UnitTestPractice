@@ -48,7 +48,7 @@ TEST(PracticeTest, is_symbol_palindrome)
 TEST(PracticeTest, is_not_symbol_palindrome)
 {
     Practice obj;
-    bool actual = obj.isPalindrome("**^*");
+    bool actual = obj.isPalindrome("[}");
     ASSERT_FALSE(actual);
 }
 TEST(PracticeTest, is_number_palindrome)
@@ -84,8 +84,13 @@ TEST(PracticeTest, is_not_palindrome_with_space)
 TEST(PracticeTest, is_sorted)
 {
     Practice obj;
-    int actual[3] = push_back(obj.sortDescending(1,3,5));
-    ASSERT_GE(actual[0], actual[1]);
-    ASSERT_GE(actual[1], actual[2]);
-    ASSERT_GE(actual[0], actual[2]);
+    int num = new int[3];
+    int num[0] = 1;
+    int num[1] = 4;
+    int num[2] = 0;
+    obj.sortDescending(num1,num2,num3);
+
+    ASSERT_GE(num[0], num[1]);
+    ASSERT_GE(num[1], num[2]);
+    ASSERT_GE(num[0], num[2]);
 }
