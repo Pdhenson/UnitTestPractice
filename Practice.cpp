@@ -1,6 +1,5 @@
 #include "Practice.h"
 #include <string>
-#include <cstring>
 #include <iostream>
 using std::string;
 
@@ -34,7 +33,7 @@ void Practice::sortDescending(int & first, int & second, int & third)
 bool Practice::isPalindrome(string input)
 {
   int l = 0; 
-  int h = strlen(input) - 1; 
+  int h = input.length() - 1; 
 
   while (h > l) 
   { 
