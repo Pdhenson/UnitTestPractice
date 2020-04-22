@@ -1,6 +1,7 @@
 #include "Practice.h"
 #include <string>
-
+#include <cstring>
+#include <iostream>
 using std::string;
 
 // Receive three integers and rearrange their values so that they are in
