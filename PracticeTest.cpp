@@ -81,10 +81,20 @@ TEST(PracticeTest, is_not_palindrome_with_space)
     bool actual = obj.isPalindrome("1 a2H* *H2a1");
     ASSERT_FALSE(actual);
 }
-TEST(PracticeTest, is_sorted)
+TEST(PracticeTest, sorted)
 {
     Practice obj;
     int num[3] = {1, 4 , 0};
+    obj.sortDescending(num[0],num[1],num[2]);
+
+    ASSERT_GE(num[0], num[1]);
+    ASSERT_GE(num[1], num[2]);
+    ASSERT_GE(num[0], num[2]);
+}
+TEST(PracticeTest, not_sorted)
+{
+    Practice obj;
+    int num[3] = {7, 4 , 0};
     obj.sortDescending(num[0],num[1],num[2]);
 
     ASSERT_GE(num[0], num[1]);
