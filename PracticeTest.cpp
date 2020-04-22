@@ -32,3 +32,16 @@ TEST(PracticeTest, is_not_a_palindrome)
     bool actual = obj.isPalindrome("ab");
     ASSERT_FALSE(actual);
 }
+TEST(PracticeTest, is_not_complex_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("aabbaababbaa");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_symbol_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("**^**");
+    ASSERT_TRUE(actual);
+}
