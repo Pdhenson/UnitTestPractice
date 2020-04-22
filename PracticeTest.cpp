@@ -61,5 +61,23 @@ TEST(PracticeTest, is_not_number_palindrome)
 {
     Practice obj;
     bool actual = obj.isPalindrome("1a12141");
+    ASSERT_FALSE(actual);
+}
+TEST(PracticeTest, is_mixed_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("1a2H*#*H2a1");
     ASSERT_TRUE(actual);
+}
+TEST(PracticeTest, is_palindrome_with_space)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("1a2H* *H2a1");
+    ASSERT_TRUE(actual);
+}
+TEST(PracticeTest, is_not_palindrome_with_space)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("1 a2H* *H2a1");
+    ASSERT_FALSE(actual);
 }
