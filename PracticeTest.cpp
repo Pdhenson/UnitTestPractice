@@ -91,7 +91,7 @@ TEST(PracticeTest, sorted)
     ASSERT_GE(num[1], num[2]);
     ASSERT_GE(num[0], num[2]);
 }
-TEST(PracticeTest, secondSmallerThird
+TEST(PracticeTest, secondSmallerThird)
 {
     Practice obj;
     int num[3] = {5, 2 , 9};
